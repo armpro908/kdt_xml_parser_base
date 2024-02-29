@@ -121,25 +121,25 @@ Write-Host "                         Отчет                                 
 Write-Host "==============================================================="
 
 Write-Host "Общее количество отверстий: " -NoNewline
-Write-Host $totalCount -ForegroundColor Cyan
+Write-Host $totalCount -ForegroundColor DarkRed
 
 Write-Host "Петли: " -NoNewline
-Write-Host $count35 -ForegroundColor Cyan
+Write-Host $count35 -ForegroundColor DarkRed
 
 Write-Host "Отдельно отверстия: " -NoNewline
-Write-Host $($totalCount - $count35) -ForegroundColor Cyan
+Write-Host $($totalCount - $count35) -ForegroundColor DarkRed
 
 Write-Host "Файлы с петлями: " -NoNewline
-Write-Host $($filesWithHinges -join ', ') -ForegroundColor Cyan
+Write-Host $($filesWithHinges -join ', ') -ForegroundColor DarkRed
 
 Write-Host "Суммарная длина пазов (в метрах): " -NoNewline
-Write-Host $([Math]::Round($totalLineLength / 1000, 2)) -ForegroundColor Cyan
+Write-Host $([Math]::Round($totalLineLength / 1000, 2)) -ForegroundColor DarkRed
 
 Write-Host "Глухие пазы: " -NoNewline
-Write-Host $([Math]::Round($blindLineLength / 1000, 2)) -ForegroundColor Cyan
+Write-Host $([Math]::Round($blindLineLength / 1000, 2)) -ForegroundColor DarkRed
 
 Write-Host "Сквозные пазы: " -NoNewline
-Write-Host $([Math]::Round($throughLineLength / 1000, 2)) -ForegroundColor Cyan
+Write-Host $([Math]::Round($throughLineLength / 1000, 2)) -ForegroundColor DarkRed
 
 Write-Host "==============================================================="
 
